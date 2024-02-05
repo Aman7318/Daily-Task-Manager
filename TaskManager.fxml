@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="530.0" prefWidth="279.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.task.TaskManagerController">
+    <ListView fx:id="taskListView" prefHeight="438.0" prefWidth="671.0" VBox.vgrow="ALWAYS" />
+    <Button onAction="#showAddTaskDialog" text="Add Task">
+      <VBox.margin>
+         <Insets bottom="2.0" left="61.0" top="3.0" />
+      </VBox.margin>
+      <padding>
+         <Insets bottom="5.0" left="35.0" right="35.0" top="5.0" />
+      </padding></Button>
+    <Button onAction="#deleteTask" text="Delete Task">
+      <VBox.margin>
+         <Insets bottom="3.0" left="61.0" />
+      </VBox.margin>
+      <padding>
+         <Insets bottom="5.0" left="29.0" right="29.0" top="5.0" />
+      </padding></Button>
+    <Button onAction="#markTaskAsCompleted" text="Mark as Completed">
+      <VBox.margin>
+         <Insets bottom="2.0" left="61.0" />
+      </VBox.margin></Button>
+</VBox>
